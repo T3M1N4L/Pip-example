@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #1e1e2e; /* Mocha Base */
+    display: flex;
+font-family:'Inter', sans-serif ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    color:#cdd6f4;
+}
+
+h1{
+    margin-bottom:5px;
+}
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-image {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    color: #585b70; /* Mocha Overlay color */
+    cursor: pointer;
+    z-index: 10;
+}
+
+#left-btn {
+    left: -50px;
+    color: #b4befe; /* Mocha Lavender */
+}
+
+#right-btn {
+    right: -50px;
+    color: #94e2d5; /* Mocha Teal */
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#html-pip-btn {
+    border-color: #94e2d5; /* Mocha Teal */
+    color: black;
+    background-color: #1e1e2e; /* Mocha Base */
+    box-shadow: 0 0 50px 50px #94e2d5 inset, 0 0 0 0 #94e2d5;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 20px;
+    height: 80px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#html-pip-btn:hover {
+    box-shadow: 0 0 10px 0 #94e2d5 inset, 0 0 10px 4px #94e2d5;
+    color: #cdd6f4; /* Mocha Text */
+    filter: drop-shadow(0 0 0.75rem #94e2d5);
+}
+
+#video-pip-btn {
+    color: black;
+    background-color: #1e1e2e; /* Mocha Base */
+    border-color: #b4befe !important; /* Mocha Lavender */
+    box-shadow: 0 0 50px 50px #b4befe inset, 0 0 0 0 #b4befe !important;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 20px;
+    height: 80px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#video-pip-btn:hover {
+    box-shadow: 0 0 10px 0 #b4befe inset, 0 0 10px 4px #b4befe !important;
+    color: #cdd6f4; /* Mocha Text */
+    filter: drop-shadow(0 0 0.75rem #b4befe) !important;
+}
+
+.pip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+#html-pip-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
